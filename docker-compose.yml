@@ -1,0 +1,15 @@
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  flask-api:
+    image: "tiangolo/uvicorn-gunicorn:python3.6-alpine3.8"
+    ports:
+      - "8081:80"
+    depends_on: 
+      - redis-server
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    command: python project/manage.py runserver 0:8000
