@@ -16,15 +16,15 @@ Volumes will act as a reference to a local folder. keep in mind: this is differe
 
 ### Without volume
 
-docker-compose up
+* docker-compose up
 
-Edit your local ./project/views.py
+* Edit your local ./project/views.py
 
-Refresh your browser
+*  Refresh your browser
 
-Nothing happens
+* Nothing happens
 
-You need to docker-compose down-up.
+* You need to docker-compose down-up.
 
 ### With volume
 
