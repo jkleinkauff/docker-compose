@@ -10,6 +10,6 @@ r.set("visits", 0)
 def index(request):
     request = requests.get('https://api.github.com/user', auth=('user', 'pass'))
     v = int(r.get("visits"))
-    ret = f"Hello, world. You're at the polls index. Number of visits:{v}"
+    ret = f"Hello, world. You're at the polls index. Number of visitsss:{v}"
     r.set("visits", v+1)
     return HttpResponse(ret)
